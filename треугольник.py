@@ -13,3 +13,8 @@ c = dist(P1, P2)
 d1 = dist(P1, Ptest)
 d2 = dist(P2, Ptest)
 d3 = dist(P3, Ptest)
+
+s_main = (a + b + c) / 2
+s1 = (c + d1 + d2) / 2
+s2 = (b + d1 + d3) / 2
+s3 = (a + d2 + d3) / 2
