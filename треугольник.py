@@ -18,3 +18,11 @@ s_main = (a + b + c) / 2
 s1 = (c + d1 + d2) / 2
 s2 = (b + d1 + d3) / 2
 s3 = (a + d2 + d3) / 2
+
+def heron(p, x, y, z):
+    return np.sqrt(p * (p - x) * (p - y) * (p - z))
+
+S_main = heron(s_main, a, b, c)
+S1 = heron(s1, c, d1, d2)
+S2 = heron(s2, b, d1, d3)
+S3 = heron(s3, a, d2, d3)
