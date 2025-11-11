@@ -10,4 +10,6 @@ a = dist(P2, P3)
 b = dist(P1, P3)
 c = dist(P1, P2)
 
-
+d1 = dist(P1, Ptest)
+d2 = dist(P2, Ptest)
+d3 = dist(P3, Ptest)
