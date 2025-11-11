@@ -26,3 +26,10 @@ S_main = heron(s_main, a, b, c)
 S1 = heron(s1, c, d1, d2)
 S2 = heron(s2, b, d1, d3)
 S3 = heron(s3, a, d2, d3)
+
+if abs(S_main - (S1 + S2 + S3)) > 1e-6:
+    print("Точка снаружжи треугольника")
+else:
+    print("Точка внутри треугольника")
+    plt.text(1, 1.5, "Точка внутри треугольника",
+             bbox={"fill": True, "linestyle": "dotted", "linewidth": 2.0})
